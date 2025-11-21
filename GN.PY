@@ -23,7 +23,7 @@ def guess_number_game():
                 break
         except ValueError:
             print("請輸入有效的數字！")
-guess_number_game()
 
+if __name__ == '__main__':
+    guess_number_game()
 
- 
