@@ -24,10 +24,11 @@ def safe_division(numerator, denominator):
         3.5
     """
     try:
-        if denominator == 0:
-            print("錯誤：除數不能為零")
-            return None
-        return numerator / denominator
+        result = numerator / denominator
+        return result
+    except ZeroDivisionError:
+        print("錯誤：除數不能為零")
+        return None
     except TypeError:
         print("錯誤：參數必須是數字")
         return None
